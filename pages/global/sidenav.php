@@ -150,6 +150,16 @@
                   Dashboard
                 </a>
               </li>
+              
+              <li class="items-center">
+                <a
+                  href="./scan.php"
+                  class="text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500"
+                >
+                  <i class="fas fa-qrcode mr-2 text-sm text-blueGray-300"></i>
+                  Scan
+                </a>
+              </li>
 
               <li class="items-center">
                 <a
