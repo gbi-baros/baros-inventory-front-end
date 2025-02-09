@@ -3,7 +3,7 @@ session_start();
 
 // Cek apakah user sudah login
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
-    header('Location: dashboard.php');
+    header('Location: pages/admin/dashboard.php');
     exit;
 }
 
