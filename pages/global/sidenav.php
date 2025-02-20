@@ -1,6 +1,4 @@
-<nav
-        class="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-sm bg-white flex flex-wrap items-center justify-between relative md:w-64 z-10 py-4 px-6 border"
-      >
+      <nav class="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-sm bg-white flex flex-wrap items-center justify-between relative md:w-64 z-10 py-4 px-6 border">
         <div
           class="md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto"
         >
@@ -133,21 +131,55 @@
             <!-- Divider -->
             <hr class="my-4 md:min-w-full" />
             <!-- Heading -->
-            <h6
-              class="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline"
-            >
-              Admin Layout Pages
-            </h6>
+            <!--<h6 class="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline">-->
+            <!--  Admin Layout Pages-->
+            <!--</h6>-->
             <!-- Navigation -->
+            
+            <?php
+            if ($currentPage === "Dashboard") {
+                $classDashboardText = "text-pink-500 hover:text-pink-600";
+                $classDashboardIcon = "opacity-75";
+            } else {
+                $classDashboardText = "text-blueGray-700 hover:text-blueGray-500";
+                $classDashboardIcon = "text-blueGray-300";
+            }
+            
+            if ($currentPage === "InputItem") {
+                $classInputItemText = "text-pink-500 hover:text-pink-600";
+                $classInputItemIcon = "opacity-75";
+            } else {
+                $classInputItemText = "text-blueGray-700 hover:text-blueGray-500";
+                $classInputItemIcon = "text-blueGray-300";
+            }
+            
+            if ($currentPage === "Settings") {
+                $classSettingsText = "text-pink-500 hover:text-pink-600";
+                $classSettingsIcon = "opacity-75";
+            } else {
+                $classSettingsText = "text-blueGray-700 hover:text-blueGray-500";
+                $classSettingsIcon = "text-blueGray-300";
+            }
+            ?>
 
             <ul class="md:flex-col md:min-w-full flex flex-col list-none">
               <li class="items-center">
                 <a
                   href="./dashboard.php"
-                  class="text-xs uppercase py-3 font-bold block text-pink-500 hover:text-pink-600"
+                  class="text-xs uppercase py-3 font-bold block <?php echo $classDashboardText; ?>"
                 >
-                  <i class="fas fa-tv mr-2 text-sm opacity-75"></i>
+                  <i class="fas fa-tv mr-2 text-sm <?php echo $classDashboardIcon; ?>"></i>
                   Dashboard
+                </a>
+              </li>
+              
+              <li class="items-center">
+                <a
+                  href="./input-item.php"
+                  class="text-xs uppercase py-3 font-bold block <?php echo $classInputItemText; ?>"
+                >
+                  <i class="fas fa-tools mr-2 text-sm <?php echo $classInputItemIcon; ?>"></i>
+                  Input Item
                 </a>
               </li>
               
@@ -160,115 +192,110 @@
                   Scan
                 </a>
               </li>
-
+              
+              <!-- Divider -->
+              <hr class="my-4 md:min-w-full" />
+              
               <li class="items-center">
                 <a
-                  href="./settings.html"
-                  class="text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500"
+                  href="./settings.php"
+                  class="text-xs uppercase py-3 font-bold block <?php echo $classSettingsText; ?>"
                 >
-                  <i class="fas fa-tools mr-2 text-sm text-blueGray-300"></i>
+                  <i class="fas fa-cog mr-2 text-sm <?php echo $classSettingsIcon; ?>"></i>
                   Settings
                 </a>
               </li>
 
-              <li class="items-center">
-                <a
-                  href="./tables.html"
-                  class="text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500"
-                >
-                  <i class="fas fa-table mr-2 text-sm text-blueGray-300"></i>
-                  Tables
-                </a>
-              </li>
+              <!--<li class="items-center">-->
+              <!--  <a-->
+              <!--    href="./tables.html"-->
+              <!--    class="text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500"-->
+              <!--  >-->
+              <!--    <i class="fas fa-table mr-2 text-sm text-blueGray-300"></i>-->
+              <!--    Tables-->
+              <!--  </a>-->
+              <!--</li>-->
 
-              <li class="items-center">
-                <a
-                  href="./maps.html"
-                  class="text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500"
-                >
-                  <i
-                    class="fas fa-map-marked mr-2 text-sm text-blueGray-300"
-                  ></i>
-                  Maps
-                </a>
-              </li>
+              <!--<li class="items-center">-->
+              <!--  <a-->
+              <!--    href="./maps.html"-->
+              <!--    class="text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500"-->
+              <!--  >-->
+              <!--    <i-->
+              <!--      class="fas fa-map-marked mr-2 text-sm text-blueGray-300"-->
+              <!--    ></i>-->
+              <!--    Maps-->
+              <!--  </a>-->
+              <!--</li>-->
             </ul>
 
             <!-- Divider -->
-            <hr class="my-4 md:min-w-full" />
+            <!--<hr class="my-4 md:min-w-full" />-->
             <!-- Heading -->
-            <h6
-              class="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline"
-            >
-              Auth Layout Pages
-            </h6>
+            <!--<h6 class="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline" >-->
+            <!--  Auth Layout Pages-->
+            <!--</h6>-->
             <!-- Navigation -->
 
-            <ul
-              class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4"
-            >
-              <li class="items-center">
-                <a
-                  href="../auth/login.html"
-                  class="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
-                >
-                  <i
-                    class="fas fa-fingerprint text-blueGray-300 mr-2 text-sm"
-                  ></i>
-                  Login
-                </a>
-              </li>
+            <!--<ul class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">-->
+            <!--  <li class="items-center">-->
+            <!--    <a-->
+            <!--      href="../auth/login.html"-->
+            <!--      class="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"-->
+            <!--      <i-->
+            <!--        class="fas fa-fingerprint text-blueGray-300 mr-2 text-sm"-->
+            <!--      ></i>-->
+            <!--      Login-->
+            <!--    </a>-->
+            <!--  </li>-->
 
-              <li class="items-center">
-                <a
-                  href="../auth/register.html"
-                  class="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
-                >
-                  <i
-                    class="fas fa-clipboard-list text-blueGray-300 mr-2 text-sm"
-                  ></i>
-                  Register
-                </a>
-              </li>
-            </ul>
+            <!--  <li class="items-center">-->
+            <!--    <a-->
+            <!--      href="../auth/register.html"-->
+            <!--      class="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"-->
+            <!--      <i-->
+            <!--        class="fas fa-clipboard-list text-blueGray-300 mr-2 text-sm"-->
+            <!--      ></i>-->
+            <!--      Register-->
+            <!--    </a>-->
+            <!--  </li>-->
+            <!--</ul>-->
 
             <!-- Divider -->
-            <hr class="my-4 md:min-w-full" />
+            <!--<hr class="my-4 md:min-w-full" />-->
             <!-- Heading -->
-            <h6
-              class="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline"
-            >
-              No Layout Pages
-            </h6>
+            <!--<h6-->
+            <!--  class="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline"-->
+            <!--  No Layout Pages-->
+            <!--</h6>-->
             <!-- Navigation -->
 
-            <ul
-              class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4"
-            >
-              <li class="items-center">
-                <a
-                  href="../landing.html"
-                  class="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
-                >
-                  <i
-                    class="fas fa-newspaper text-blueGray-300 mr-2 text-sm"
-                  ></i>
-                  Landing Page
-                </a>
-              </li>
+            <!--<ul-->
+            <!--  class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4"-->
+            <!--  <li class="items-center">-->
+            <!--    <a-->
+            <!--      href="../landing.html"-->
+            <!--      class="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"-->
+            <!--    >-->
+            <!--      <i-->
+            <!--        class="fas fa-newspaper text-blueGray-300 mr-2 text-sm"-->
+            <!--      ></i>-->
+            <!--      Landing Page-->
+            <!--    </a>-->
+            <!--  </li>-->
 
-              <li class="items-center">
-                <a
-                  href="../profile.html"
-                  class="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
-                >
-                  <i
-                    class="fas fa-user-circle text-blueGray-300 mr-2 text-sm"
-                  ></i>
-                  Profile Page
-                </a>
-              </li>
-            </ul>
+            <!--  <li class="items-center">-->
+            <!--    <a-->
+            <!--      href="../profile.html"-->
+            <!--      class="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"-->
+            <!--    >-->
+            <!--      <i-->
+            <!--        class="fas fa-user-circle text-blueGray-300 mr-2 text-sm"-->
+            <!--      ></i>-->
+            <!--      Profile Page-->
+            <!--    </a>-->
+            <!--  </li>-->
+            <!--</ul>-->
 
             <!-- Divider -->
             <!-- hr class="my-4 md:min-w-full" /-->
@@ -389,7 +416,7 @@
             class="w-full mx-autp items-center flex justify-between md:flex-nowrap flex-wrap md:px-10 px-4"
           >
             <a
-              class="text-white text-sm uppercase hidden lg:inline-block font-semibold"
+              class="text-blueGray-600 text-sm uppercase hidden lg:inline-block font-semibold"
               href="./index.html"
               >Dashboard</a
             >
