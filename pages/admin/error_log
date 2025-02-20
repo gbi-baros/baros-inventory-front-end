@@ -13,3 +13,5 @@
 [17-Feb-2025 09:23:48 UTC] PHP Warning:  Undefined array key "brand" in /home/gbibaro1/public_html/inventory/pages/admin/dashboard.php on line 324
 [17-Feb-2025 09:23:48 UTC] PHP Warning:  Undefined array key "brand" in /home/gbibaro1/public_html/inventory/pages/admin/dashboard.php on line 324
 [17-Feb-2025 09:23:48 UTC] PHP Warning:  Undefined array key "brand" in /home/gbibaro1/public_html/inventory/pages/admin/dashboard.php on line 324
+[20-Feb-2025 08:04:20 UTC] PHP Warning:  Undefined variable $dataBarang in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 125
+[20-Feb-2025 08:10:07 UTC] PHP Warning:  Undefined variable $dataBarang in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 117

@@ -28,7 +28,7 @@ curl_close($ch);
 // Decode JSON menjadi array PHP
 $dataBarang = json_decode($response, true);
 
-echo "<script>console.log('Test Response: " . $response . "');</script>";
+// echo "<script>console.log('Test Response: " . $response . "');</script>";
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,19 +37,9 @@ echo "<script>console.log('Test Response: " . $response . "');</script>";
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <link rel="shortcut icon" href="../../assets/img/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="../../assets/img/apple-icon.png"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
-    />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
+    <link rel="stylesheet" href="../../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" />
     <link rel="stylesheet" href="../../assets/styles/tailwind.css" />
     <title>Dashboard</title>
   </head>
@@ -126,34 +116,19 @@ echo "<script>console.log('Test Response: " . $response . "');</script>";
           <!--</div>-->
           <div class="flex flex-wrap">
             <div class="w-full xl:w-12/12 mb-12 xl:mb-0 px-4">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-sm rounded-lg border"
-              >
+              <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-sm rounded-lg border bg-white ">
                 <div class="rounded-t mb-0 px-4 py-3 border-0">
                   <div class="flex flex-wrap items-center">
-                    <div
-                      class="relative w-full px-4 max-w-full flex-grow flex-1"
-                    >
+                    <div class="relative w-full px-4 max-w-full flex-grow flex-1">
                       <h3 class="font-semibold text-base text-blueGray-700">
                         Inventory List
                       </h3>
-                    </div>
-                    <div
-                      class="relative w-full px-4 max-w-full flex-grow flex-1 text-right"
-                    >
-                      <!--<button-->
-                      <!--  class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"-->
-                      <!--  type="button">-->
-                      <!--  See all-->
-                      <!--</button>-->
                     </div>
                   </div>
                 </div>
                 <div class="block w-full overflow-x-auto">
                   <!-- Projects table -->
-                  <table
-                    class="items-center w-full bg-transparent border-collapse"
-                  >
+                  <table class="items-center w-full bg-transparent border-collapse">
                     <thead>
                       <tr>
                         <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
@@ -415,10 +390,7 @@ echo "<script>console.log('Test Response: " . $response . "');</script>";
         </div>
       </div>
     </div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
-      charset="utf-8"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" charset="utf-8"></script>
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
     <script type="text/javascript">
       /* Make dynamic date appear */
