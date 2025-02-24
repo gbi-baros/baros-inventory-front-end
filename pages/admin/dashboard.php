@@ -3,7 +3,7 @@ include '../global/session.php';
 $currentPage = "Dashboard";
 
 // URL Endpoint API
-$url = 'http://54.254.130.73:8000/api/v1/items/';
+$url = 'http://54.254.130.73:8000/inventories';
 
 // Inisialisasi cURL
 $ch = curl_init($url);
@@ -28,7 +28,7 @@ curl_close($ch);
 // Decode JSON menjadi array PHP
 $dataBarang = json_decode($response, true);
 
-// echo "<script>console.log('Test Response: " . $response . "');</script>";
+echo "<script>console.log('Test Response Inventories: " . $response . "');</script>";
 ?>
 <!DOCTYPE html>
 <html>
