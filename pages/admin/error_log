@@ -15,3 +15,160 @@
 [17-Feb-2025 09:23:48 UTC] PHP Warning:  Undefined array key "brand" in /home/gbibaro1/public_html/inventory/pages/admin/dashboard.php on line 324
 [20-Feb-2025 08:04:20 UTC] PHP Warning:  Undefined variable $dataBarang in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 125
 [20-Feb-2025 08:10:07 UTC] PHP Warning:  Undefined variable $dataBarang in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 117
+[24-Feb-2025 04:30:11 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/gbibaro1/public_html/inventory/pages/admin/dashboard.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/admin/dashboard.php on line 158
+[24-Feb-2025 04:30:17 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/gbibaro1/public_html/inventory/pages/admin/input-item.php:148
+Stack trace:
+#0 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/admin/input-item.php on line 148
+[24-Feb-2025 04:30:19 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/gbibaro1/public_html/inventory/pages/admin/dashboard.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/admin/dashboard.php on line 158
+[24-Feb-2025 04:30:23 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/gbibaro1/public_html/inventory/pages/admin/settings.php:132
+Stack trace:
+#0 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 132
+[24-Feb-2025 04:30:33 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/gbibaro1/public_html/inventory/pages/admin/settings.php:132
+Stack trace:
+#0 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 132
+[24-Feb-2025 04:31:23 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/gbibaro1/public_html/inventory/pages/admin/settings.php:132
+Stack trace:
+#0 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 132
+[24-Feb-2025 04:34:05 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/gbibaro1/public_html/inventory/pages/admin/settings.php:132
+Stack trace:
+#0 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 132
+[24-Feb-2025 04:35:34 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/gbibaro1/public_html/inventory/pages/admin/settings.php:132
+Stack trace:
+#0 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 132
+[24-Feb-2025 04:35:41 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/gbibaro1/public_html/inventory/pages/admin/settings.php:132
+Stack trace:
+#0 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 132
+[24-Feb-2025 04:35:48 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/gbibaro1/public_html/inventory/pages/admin/settings.php:132
+Stack trace:
+#0 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 132
+[24-Feb-2025 04:38:36 UTC] PHP Warning:  Undefined array key "brand" in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 134
+[24-Feb-2025 04:50:07 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/gbibaro1/public_html/inventory/pages/admin/dashboard.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/admin/dashboard.php on line 158
+[24-Feb-2025 04:50:11 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/gbibaro1/public_html/inventory/pages/admin/dashboard.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/admin/dashboard.php on line 158
+[24-Feb-2025 05:21:33 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 139
+[24-Feb-2025 05:21:33 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 141
+[24-Feb-2025 05:21:33 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 139
+[24-Feb-2025 05:21:33 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 141
+[24-Feb-2025 05:21:33 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 139
+[24-Feb-2025 05:21:33 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 141
+[24-Feb-2025 05:21:33 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 139
+[24-Feb-2025 05:21:33 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 141
+[24-Feb-2025 05:22:09 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 138
+[24-Feb-2025 05:22:09 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 140
+[24-Feb-2025 05:22:09 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 138
+[24-Feb-2025 05:22:09 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 140
+[24-Feb-2025 05:22:09 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 138
+[24-Feb-2025 05:22:09 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 140
+[24-Feb-2025 05:22:09 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 138
+[24-Feb-2025 05:22:09 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 140
+[24-Feb-2025 05:23:30 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 139
+[24-Feb-2025 05:23:30 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 141
+[24-Feb-2025 05:23:30 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 146
+[24-Feb-2025 05:23:30 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 139
+[24-Feb-2025 05:23:30 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 141
+[24-Feb-2025 05:23:30 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 146
+[24-Feb-2025 05:23:30 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 139
+[24-Feb-2025 05:23:30 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 141
+[24-Feb-2025 05:23:30 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 146
+[24-Feb-2025 05:23:30 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 139
+[24-Feb-2025 05:23:30 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 141
+[24-Feb-2025 05:23:30 UTC] PHP Warning:  Undefined variable $index in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 146
+[24-Feb-2025 05:31:56 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/gbibaro1/public_html/inventory/pages/admin/input-item.php:148
+Stack trace:
+#0 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/admin/input-item.php on line 148
+[24-Feb-2025 05:31:59 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/gbibaro1/public_html/inventory/pages/admin/dashboard.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/admin/dashboard.php on line 158
+[24-Feb-2025 05:41:24 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/gbibaro1/public_html/inventory/pages/admin/dashboard.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/admin/dashboard.php on line 158
+[24-Feb-2025 05:41:27 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/gbibaro1/public_html/inventory/pages/admin/input-item.php:148
+Stack trace:
+#0 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/admin/input-item.php on line 148
+[24-Feb-2025 05:43:52 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/gbibaro1/public_html/inventory/pages/admin/dashboard.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/admin/dashboard.php on line 158
+[24-Feb-2025 05:51:07 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/gbibaro1/public_html/inventory/pages/admin/dashboard.php:158
+Stack trace:
+#0 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/admin/dashboard.php on line 158
+[24-Feb-2025 06:23:57 UTC] PHP Warning:  Undefined variable $dataTipe in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 179
+[24-Feb-2025 06:24:32 UTC] PHP Warning:  Undefined variable $dataTipe in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 179
+[24-Feb-2025 06:24:58 UTC] PHP Warning:  Undefined variable $dataTipe in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 179
+[24-Feb-2025 06:25:38 UTC] PHP Warning:  Undefined variable $dataTipe in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 179
+[24-Feb-2025 06:26:58 UTC] PHP Warning:  Undefined variable $dataTipe in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 179
+[24-Feb-2025 06:27:52 UTC] PHP Warning:  Undefined variable $chGetTypesRequest in /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php on line 14
+[24-Feb-2025 06:27:52 UTC] PHP Fatal error:  Uncaught TypeError: curl_exec(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php:14
+Stack trace:
+#0 /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php(14): curl_exec()
+#1 /home/gbibaro1/public_html/inventory/pages/admin/settings.php(7): include('/home/gbibaro1/...')
+#2 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php on line 14
+[24-Feb-2025 06:28:00 UTC] PHP Warning:  Undefined variable $chGetTypesRequest in /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php on line 14
+[24-Feb-2025 06:28:00 UTC] PHP Fatal error:  Uncaught TypeError: curl_exec(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php:14
+Stack trace:
+#0 /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php(14): curl_exec()
+#1 /home/gbibaro1/public_html/inventory/pages/admin/settings.php(7): include('/home/gbibaro1/...')
+#2 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php on line 14
+[24-Feb-2025 06:28:15 UTC] PHP Warning:  Undefined variable $dataTipe in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 181
+[24-Feb-2025 06:29:23 UTC] PHP Warning:  Undefined variable $chGetTypesRequest in /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php on line 14
+[24-Feb-2025 06:29:23 UTC] PHP Fatal error:  Uncaught TypeError: curl_exec(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php:14
+Stack trace:
+#0 /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php(14): curl_exec()
+#1 /home/gbibaro1/public_html/inventory/pages/admin/settings.php(7): include('/home/gbibaro1/...')
+#2 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php on line 14
+[24-Feb-2025 06:30:35 UTC] PHP Warning:  Undefined variable $chGetTypesRequest in /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php on line 14
+[24-Feb-2025 06:30:35 UTC] PHP Fatal error:  Uncaught TypeError: curl_exec(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php:14
+Stack trace:
+#0 /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php(14): curl_exec()
+#1 /home/gbibaro1/public_html/inventory/pages/admin/settings.php(7): include('/home/gbibaro1/...')
+#2 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php on line 14
+[24-Feb-2025 06:30:37 UTC] PHP Warning:  Undefined variable $chGetTypesRequest in /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php on line 14
+[24-Feb-2025 06:30:37 UTC] PHP Fatal error:  Uncaught TypeError: curl_exec(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php:14
+Stack trace:
+#0 /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php(14): curl_exec()
+#1 /home/gbibaro1/public_html/inventory/pages/admin/settings.php(7): include('/home/gbibaro1/...')
+#2 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php on line 14
+[24-Feb-2025 06:30:39 UTC] PHP Warning:  Undefined variable $chGetTypesRequest in /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php on line 14
+[24-Feb-2025 06:30:39 UTC] PHP Fatal error:  Uncaught TypeError: curl_exec(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php:14
+Stack trace:
+#0 /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php(14): curl_exec()
+#1 /home/gbibaro1/public_html/inventory/pages/admin/settings.php(7): include('/home/gbibaro1/...')
+#2 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php on line 14
+[24-Feb-2025 06:30:44 UTC] PHP Warning:  Undefined variable $chGetTypesRequest in /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php on line 14
+[24-Feb-2025 06:30:44 UTC] PHP Fatal error:  Uncaught TypeError: curl_exec(): Argument #1 ($handle) must be of type CurlHandle, null given in /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php:14
+Stack trace:
+#0 /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php(14): curl_exec()
+#1 /home/gbibaro1/public_html/inventory/pages/admin/settings.php(7): include('/home/gbibaro1/...')
+#2 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/controller/getTypesRequest.php on line 14
+[24-Feb-2025 06:30:57 UTC] PHP Warning:  Undefined variable $dataTipe in /home/gbibaro1/public_html/inventory/pages/admin/settings.php on line 181

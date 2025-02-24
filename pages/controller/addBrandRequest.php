@@ -1,11 +1,12 @@
 <?php
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!empty($_POST['data'])) {
         $stringData = $_POST['data'];
 
-        $url = 'http://54.254.130.73:8000/api/v1/brands/'; // Ganti dengan URL API Anda
+        $url = 'http://54.254.130.73:8000/brands/'; // Ganti dengan URL API Anda
         
-        $data = ["brand" => $stringData]; // Format data yang dikirim
+        $data = ["name" => $stringData]; // Format data yang dikirim
 
         $options = [
             CURLOPT_URL => $url,
@@ -27,5 +28,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     echo "Akses tidak diizinkan.";
 }
-header('Location: settings.php');
+header('Location: ../admin/settings.php');
 ?>

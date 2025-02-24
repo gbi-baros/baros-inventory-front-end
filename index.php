@@ -11,49 +11,50 @@ $error = "";
 $api_url = "http://54.254.130.73:8000/api/v1/auth/signin/"; // Ganti dengan API URL Anda
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $remember = isset($_POST['remember']) ? true : false;
+    // $username = $_POST['username'];
+    // $password = $_POST['password'];
+    // $remember = isset($_POST['remember']) ? true : false;
 
-    // Data login yang akan dikirim ke API
-    $data = json_encode([
-        "email" => $username,
-        "password" => $password
-    ]);
+    // // Data login yang akan dikirim ke API
+    // $data = json_encode([
+    //     "email" => $username,
+    //     "password" => $password
+    // ]);
 
-    // Inisialisasi cURL
-    $ch = curl_init($api_url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_POST, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, [
-        "Content-Type: application/json"
-    ]);
+    // // Inisialisasi cURL
+    // $ch = curl_init($api_url);
+    // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    // curl_setopt($ch, CURLOPT_POST, true);
+    // curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+    // curl_setopt($ch, CURLOPT_HTTPHEADER, [
+    //     "Content-Type: application/json"
+    // ]);
 
-    // Eksekusi request
-    $response = curl_exec($ch);
-    $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    curl_close($ch);
+    // // Eksekusi request
+    // $response = curl_exec($ch);
+    // $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    // curl_close($ch);
 
-    // Jika login berhasil
-    if ($http_code == 200) {
-        $result = json_decode($response, true);
-        $token = $result['token']; // JWT token dari API
+    // // Jika login berhasil
+    // if ($http_code == 200) {
+    //     $result = json_decode($response, true);
+    //     $token = $result['token']; // JWT token dari API
 
-        // Simpan token dalam session
-        $_SESSION['token'] = $token;
-        $_SESSION['loggedin'] = true;
+    //     // Simpan token dalam session
+    //     $_SESSION['token'] = $token;
+    //     $_SESSION['loggedin'] = true;
 
-        // Jika "Remember Me" diaktifkan, simpan token dalam cookie
-        if ($remember) {
-            setcookie("jwt_token", $token, time() + (86400 * 30), "/"); // 30 hari
-        }
+    //     // Jika "Remember Me" diaktifkan, simpan token dalam cookie
+    //     if ($remember) {
+    //         setcookie("jwt_token", $token, time() + (86400 * 30), "/"); // 30 hari
+    //     }
 
-        header("Location: pages/admin/dashboard.php");
-        exit;
-    } else {
-        $error = "Login gagal! Periksa kembali username dan password.";
-    }
+    //     header("Location: pages/admin/dashboard.php");
+    //     exit;
+    // } else {
+    //     $error = "Login gagal! Periksa kembali username dan password.";
+    // }
+    header("Location: pages/admin/dashboard.php");
 }
 ?>
 <!DOCTYPE html>
@@ -116,41 +117,29 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="container mx-auto px-4 h-full">
           <div class="flex content-center items-center justify-center h-full">
             <div class="w-full lg:w-4/12 px-4">
-              <div
-                class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200 border-0"
-              >
+              <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200 border-0">
                 <div class="rounded-t mb-0 px-6 py-6">
-                  <div class="text-center mb-3">
-                    <h6 class="text-blueGray-500 text-sm font-bold">
-                      Sign in with
-                    </h6>
-                  </div>
-                  <div class="btn-wrapper text-center">
-                    <button
-                      class="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
-                      type="button"
-                    >
-                      <img
-                        alt="..."
-                        class="w-5 mr-1"
-                        src="assets/img/github.svg"
-                      />Github</button
-                    ><button
-                      class="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
-                      type="button"
-                    >
-                      <img
-                        alt="..."
-                        class="w-5 mr-1"
-                        src="assets/img/google.svg"
-                      />Google
-                    </button>
-                  </div>
-                  <hr class="mt-6 border-b-1 border-blueGray-300" />
+                  <!--<div class="text-center">-->
+                  <!--  <h6 class="text-blueGray-500 text-sm font-bold">Inventaris Barang GBI Baros</h6>-->
+                  <!--</div>-->
+                  <!--<div class="btn-wrapper text-center">-->
+                  <!--  <button class="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150" type="button">-->
+                  <!--    <img alt="..." class="w-5 mr-1" src="assets/img/github.svg" />-->
+                  <!--    Github-->
+                  <!--  </button>-->
+                  <!--  <button class="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150" type="button">-->
+                  <!--    <img alt="..." class="w-5 mr-1" src="assets/img/google.svg" />-->
+                  <!--    Google-->
+                  <!--  </button>-->
+                  <!--</div>-->
+                  <!--<hr class="mt-6 border-b-1 border-blueGray-300" />-->
                 </div>
                 <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
+                  <div class="text-center">
+                    <h6 class="text-blueGray-500 text-md font-bold">Inventaris Barang GBI Baros</h6>
+                  </div>
                   <div class="text-blueGray-400 text-center mb-3 font-bold">
-                    <small>Or sign in with credentials</small>
+                    <small>Sign in</small>
                     <?php if (!empty($error)) : ?>
                         <p class="text-red-500 text-sm mb-4"> <?= $error ?> </p>
                     <?php endif; ?>

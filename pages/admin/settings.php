@@ -2,33 +2,9 @@
 include '../global/session.php';
 $currentPage = "Settings";
 
-// URL Endpoint API
-$url = 'http://54.254.130.73:8000/api/v1/brands/';
-
-// Inisialisasi cURL
-$ch = curl_init($url);
-
-// Set opsi cURL
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_HTTPHEADER, [
-    'Content-Type: application/json'
-]);
-
-// Eksekusi dan ambil hasilnya
-$response = curl_exec($ch);
-
-// Cek apakah ada error
-if(curl_errno($ch)){
-    echo 'Error:' . curl_error($ch);
-}
-
-// Tutup koneksi cURL
-curl_close($ch);
-
-// Decode JSON menjadi array PHP
-$dataMerek = json_decode($response, true);
-
-// echo "<script>console.log('Test Response: " . $response . "');</script>";
+//call api
+include '../controller/getBrandRequest.php';
+include '../controller/getTypesRequest.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -73,28 +49,29 @@ $dataMerek = json_decode($response, true);
                   </div>
                 </div>
                 <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
-                  <form action="updateBrandRequest.php" method="post">
-                    <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">Merek</h6>
+                  <form action="../controller/addBrandRequest.php" method="post" autocomplete="off">
+                    <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">Merek Barang</h6>
                     <div class="flex flex-wrap">
                       <div class="w-full lg:w-4/12 px-4">
                         <div class="relative w-full mb-3">
                           <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
-                            Tambahkan Merek
+                            Tambahkan Merek Barang
                           </label>
                           <input
                             type="text"
                             class="border px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow-sm focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                            value="Merek"
+                            placeholder="Merek"
                             id="data"
                             name="data"
                             style="border-color: #e4e4e7;"
+                            required
                           />
                         </div>
                       </div>
                       <div class="w-full lg:w-4/12 px-4">
                         <div class="relative w-full mb-3">
                           <button
-                            class="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-base px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
+                            class="bg-teal-500 text-white active:bg-pink-600 font-bold uppercase text-base px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
                             type="submit"
                             style="margin-top: 27px;"
                           >
@@ -105,7 +82,7 @@ $dataMerek = json_decode($response, true);
                       <div class="w-full lg:w-12/12 px-4">
                         <div class="relative w-full mb-3">
                           <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
-                            List Merek
+                            List Merek Barang
                           </label>
                           <div class="block w-full overflow-x-auto border rounded-lg">
                           <table class="items-center w-full bg-white border-collapse">
@@ -115,7 +92,7 @@ $dataMerek = json_decode($response, true);
                                   Id Merek
                                 </th>
                                 <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                Nama Merek
+                                  Nama Merek
                                 </th>
                                 <th class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
                                 </th>
@@ -127,19 +104,15 @@ $dataMerek = json_decode($response, true);
                                 if(is_array($dataMerek)) {
                                 // Looping data merek dengan foreach
                                 foreach($dataMerek as $merek) {
-                                  echo '<tr>';
+                                  echo "<tr>";
                                   //Id Merek
                                   echo "<th class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left'>" . htmlspecialchars($merek['id']) . "</th>";
                                   //Nama Merek
-                                  echo "<td class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4'>" . htmlspecialchars($merek['brand']) . "</td>";
+                                  echo "<td class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4'>" . htmlspecialchars($merek['name']) . "</td>";
                                   //Options
                                   echo "<td class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right'>";
-                                  echo '<a href="#pablo" class="text-blueGray-500 block py-1 px-3" onclick="openDropdown(event,\'table-light-2-dropdown\')"><i class="fas fa-ellipsis-v"></i></a>';
-                                  echo '<div class="hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48" id="table-light-2-dropdown">';
-                                  echo '<a href="#pablo" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Delete</a>';
-                                  echo '</div>';
-                                  echo '</td>';
-                                  echo '</tr>';
+                                  //Delete Button
+                                  echo "<a href='../controller/deleteBrandRequest.php?brand_id=" . $merek['id'] . "' class='bg-red-600 text-white active:bg-amber-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150' type='button'><i class='fas fa-trash-alt'></i></a>";
                                   }
                                 } else {
                                   echo "<script>console.log('Warning: Data BARANG tidak ditemukan!');</script>";
@@ -152,101 +125,79 @@ $dataMerek = json_decode($response, true);
                       </div>
                     </div>
                   </form>
-                  <form>
-                    <hr class="mt-6 border-b-1 border-blueGray-300" />
-                    <h6
-                      class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase"
-                    >
-                      Contact Information
-                    </h6>
+                  <hr class="mt-6 border-b-1 border-blueGray-300" />
+                  <form action="../controller/addTypesRequest.php" method="post" autocomplete="off">
+                    <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">Tipe Barang</h6>
                     <div class="flex flex-wrap">
+                      <div class="w-full lg:w-4/12 px-4">
+                        <div class="relative w-full mb-3">
+                          <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
+                            Tambahkan Tipe Barang
+                          </label>
+                          <input
+                            type="text"
+                            class="border px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow-sm focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                            placeholder="Merek"
+                            id="data"
+                            name="data"
+                            style="border-color: #e4e4e7;"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="w-full lg:w-4/12 px-4">
+                        <div class="relative w-full mb-3">
+                          <button
+                            class="bg-teal-500 text-white active:bg-pink-600 font-bold uppercase text-base px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
+                            type="submit"
+                            style="margin-top: 27px;"
+                          >
+                           Tambahkan
+                          </button>
+                        </div>
+                      </div>
                       <div class="w-full lg:w-12/12 px-4">
                         <div class="relative w-full mb-3">
-                          <label
-                            class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                            htmlFor="grid-password"
-                          >
-                            Address
+                          <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
+                            List Tipe Barang
                           </label>
-                          <input
-                            type="text"
-                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                            value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
-                          />
-                        </div>
-                      </div>
-                      <div class="w-full lg:w-4/12 px-4">
-                        <div class="relative w-full mb-3">
-                          <label
-                            class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                            htmlFor="grid-password"
-                          >
-                            City
-                          </label>
-                          <input
-                            type="email"
-                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                            value="New York"
-                          />
-                        </div>
-                      </div>
-                      <div class="w-full lg:w-4/12 px-4">
-                        <div class="relative w-full mb-3">
-                          <label
-                            class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                            htmlFor="grid-password"
-                          >
-                            Country
-                          </label>
-                          <input
-                            type="text"
-                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                            value="United States"
-                          />
-                        </div>
-                      </div>
-                      <div class="w-full lg:w-4/12 px-4">
-                        <div class="relative w-full mb-3">
-                          <label
-                            class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                            htmlFor="grid-password"
-                          >
-                            Postal Code
-                          </label>
-                          <input
-                            type="text"
-                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                            value="Postal Code"
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    <hr class="mt-6 border-b-1 border-blueGray-300" />
-
-                    <h6
-                      class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase"
-                    >
-                      About Me
-                    </h6>
-                    <div class="flex flex-wrap">
-                      <div class="w-full lg:w-12/12 px-4">
-                        <div class="relative w-full mb-3">
-                          <label
-                            class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                            htmlFor="grid-password"
-                          >
-                            About me
-                          </label>
-                          <textarea
-                            type="text"
-                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                            rows="4"
-                          >
-                                A beautiful UI Kit and Admin for JavaScript & Tailwind CSS. It is Free
-                                and Open Source.
-                              </textarea
-                          >
+                          <div class="block w-full overflow-x-auto border rounded-lg">
+                          <table class="items-center w-full bg-white border-collapse">
+                            <thead>
+                              <tr>
+                                <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                                  Id Tipe
+                                </th>
+                                <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                                  Nama Tipe
+                                </th>
+                                <th class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                // Cek apakah data berhasil diambil
+                                if(is_array($dataTipe)) {
+                                // Looping data dengan foreach
+                                foreach($dataTipe as $tipe) {
+                                  echo "<tr>";
+                                  //Id Tipe
+                                  echo "<th class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left'>" . htmlspecialchars($tipe['id']) . "</th>";
+                                  //Nama Tipe
+                                  echo "<td class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4'>" . htmlspecialchars($tipe['name']) . "</td>";
+                                  //Options
+                                  echo "<td class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right'>";
+                                  //Delete Button
+                                  echo "<a href='../controller/deleteTypesRequest.php?type_id=" . $tipe['id'] . "' class='bg-red-600 text-white active:bg-amber-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150' type='button'><i class='fas fa-trash-alt'></i></a>";
+                                  }
+                                } else {
+                                  echo "<script>console.log('Warning: Data TIPE BARANG tidak ditemukan!');</script>";
+                                }
+                                ?>
+                            </tbody>
+                          </table>
+                          </div>
                         </div>
                       </div>
                     </div>

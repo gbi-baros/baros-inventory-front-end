@@ -138,7 +138,7 @@
             
             <?php
             if ($currentPage === "Dashboard") {
-                $classDashboardText = "text-pink-500 hover:text-pink-600";
+                $classDashboardText = "text-teal-500 hover:text-lightBlue-500";
                 $classDashboardIcon = "opacity-75";
             } else {
                 $classDashboardText = "text-blueGray-700 hover:text-blueGray-500";
@@ -146,7 +146,7 @@
             }
             
             if ($currentPage === "InputItem") {
-                $classInputItemText = "text-pink-500 hover:text-pink-600";
+                $classInputItemText = "text-teal-500 hover:text-lightBlue-500";
                 $classInputItemIcon = "opacity-75";
             } else {
                 $classInputItemText = "text-blueGray-700 hover:text-blueGray-500";
@@ -154,7 +154,7 @@
             }
             
             if ($currentPage === "Settings") {
-                $classSettingsText = "text-pink-500 hover:text-pink-600";
+                $classSettingsText = "text-teal-500 hover:text-lightBlue-500";
                 $classSettingsIcon = "opacity-75";
             } else {
                 $classSettingsText = "text-blueGray-700 hover:text-blueGray-500";
