@@ -1124,8 +1124,7 @@ select {
 }
 
 .bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  background-color: #000000;
 }
 
 .bg-white {

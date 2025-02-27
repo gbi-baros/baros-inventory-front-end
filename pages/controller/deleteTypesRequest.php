@@ -1,9 +1,9 @@
 <?php
+include 'apiEndPointUrl.php';
 if (isset($_GET['type_id'])) {
     $type_id = $_GET['type_id']; // Ambil type_id dari URL
 
-    // Buat URL endpoint dengan menyisipkan type_id
-    $api_url = "http://54.254.130.73:8000/types/" . $type_id;
+    $api_url = $deleteTypesRequestUrl . $type_id;
 
     // Inisialisasi cURL
     $ch = curl_init($api_url);

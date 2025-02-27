@@ -1,10 +1,10 @@
 <?php
-
+include 'apiEndPointUrl.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!empty($_POST['data'])) {
         $stringData = $_POST['data'];
 
-        $url = 'http://54.254.130.73:8000/brands/'; // Ganti dengan URL API Anda
+        $url = $addBrandRequestUrl;
         
         $data = ["name" => $stringData]; // Format data yang dikirim
 

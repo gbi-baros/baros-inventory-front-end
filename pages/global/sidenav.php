@@ -80,28 +80,28 @@
                     <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
                         <!-- Dashboard -->
                         <a href="./dashboard.php" class="flex flex-col items-center <?php echo $classDashboardText; ?>">
-                            <i class="fas fa-tv mr-2 text-lg <?php echo $classDashboardIcon; ?>"></i>
+                            <i class="fas fa-tv mr-2 text-lg <?php echo $classDashboardIcon; ?>" style="margin-left:5px;"></i>
                             <span class="text-xs">Dashboard</span>
                          </a>
                     </div>
                     <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
                         <!-- Input -->
                         <a href="./input-item.php" class="flex flex-col items-center <?php echo $classInputItemText; ?>">
-                            <i class="fas fa-tools mr-2 text-lg <?php echo $classInputItemIcon; ?>"></i>
+                            <i class="fas fa-tools mr-2 text-lg <?php echo $classInputItemIcon; ?>" style="margin-left:5px;"></i>
                             <span class="text-xs">Input Item</span>
                         </a>
                     </div>
                     <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
                         <!-- Scan -->
                         <a href="./scan.php" class="flex flex-col items-center text-blueGray-700 hover:text-blueGray-500">
-                            <i class="fas fa-qrcode mr-2 text-sm text-blueGray-300"></i>
-                            <span class="text-xs">Scan</span>
+                            <i class="fas fa-qrcode mr-2 text-lg text-blueGray-300" style="margin-left:5px;"></i>
+                            <span class="text-xs">Scan QR</span>
                         </a>
                     </div>
                     <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
                         <!-- Akun -->
                         <a href="./settings.php" class="flex flex-col items-center <?php echo $classSettingsText; ?>">
-                            <i class="fas fa-cog mr-2 text-lg <?php echo $classSettingsIcon; ?>"></i>
+                            <i class="fas fa-cog mr-2 text-lg <?php echo $classSettingsIcon; ?>" style="margin-left:5px;"></i>
                             <span class="text-xs">Settings</span>
                         </a>
                     </div>
@@ -180,7 +180,7 @@
                   class="text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500"
                 >
                   <i class="fas fa-qrcode mr-2 text-sm text-blueGray-300"></i>
-                  Scan
+                  Scan QR
                 </a>
               </li>
               
@@ -436,13 +436,10 @@
                 onclick="openDropdown(event,'user-dropdown')"
               >
                 <div class="items-center flex">
-                  <span
-                    class="w-12 h-12 text-sm text-white bg-blueGray-200 inline-flex items-center justify-center rounded-full"
-                    ><img
-                      alt="..."
-                      class="w-full rounded-full align-middle border-none shadow-lg"
-                      src="../../assets/img/team-1-800x800.jpg"
-                  /></span>
+                  <span class="w-12 h-12 text-3xl text-blueGray-900 bg-blueGray-200 inline-flex items-center justify-center rounded-full">
+                    <!--<img alt="..." class="w-full rounded-full align-middle border-none shadow-lg" src="#" />-->
+                    <i class="fas fa-user-circle"></i>
+              </span>
                 </div>
               </a>
               <div

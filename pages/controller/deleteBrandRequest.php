@@ -1,9 +1,9 @@
 <?php
+include 'apiEndPointUrl.php';
 if (isset($_GET['brand_id'])) {
     $brand_id = $_GET['brand_id']; // Ambil brand_id dari URL
 
-    // Buat URL endpoint dengan menyisipkan brand_id
-    $api_url = "http://54.254.130.73:8000/brands/" . $brand_id;
+    $api_url = $deleteBrandRequestUrl . $brand_id;
 
     // Inisialisasi cURL
     $ch = curl_init($api_url);

@@ -4,3 +4,88 @@
 [24-Feb-2025 07:31:53 UTC] PHP Warning:  Undefined variable $addTypesRequestUrl in /home/gbibaro1/public_html/inventory/pages/controller/addTypesRequest.php on line 7
 [24-Feb-2025 07:34:39 UTC] PHP Warning:  Undefined variable $addTypesRequestUrl in /home/gbibaro1/public_html/inventory/pages/controller/addTypesRequest.php on line 8
 [24-Feb-2025 07:34:44 UTC] PHP Warning:  Undefined variable $addTypesRequestUrl in /home/gbibaro1/public_html/inventory/pages/controller/addTypesRequest.php on line 8
+[25-Feb-2025 08:39:13 UTC] PHP Warning:  Undefined variable $addTypesRequestUrl in /home/gbibaro1/public_html/inventory/pages/controller/addTypesRequest.php on line 7
+[25-Feb-2025 09:35:25 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 5
+[25-Feb-2025 09:43:45 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 5
+[25-Feb-2025 09:47:28 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 4
+[25-Feb-2025 09:47:28 UTC] PHP Warning:  Array to string conversion in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 6
+[25-Feb-2025 09:53:04 UTC] PHP Warning:  Undefined variable $stringData in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 18
+[25-Feb-2025 12:31:52 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 16
+[25-Feb-2025 12:38:23 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 18
+[25-Feb-2025 12:38:56 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 18
+[25-Feb-2025 12:41:54 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 18
+[25-Feb-2025 12:44:05 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 18
+[25-Feb-2025 12:44:05 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 26
+[25-Feb-2025 12:44:05 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 27
+[25-Feb-2025 12:44:05 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 28
+[25-Feb-2025 12:44:05 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 29
+[25-Feb-2025 12:44:05 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 30
+[25-Feb-2025 12:45:11 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 18
+[25-Feb-2025 12:45:11 UTC] PHP Warning:  Array to string conversion in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 25
+[25-Feb-2025 12:45:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 28
+[25-Feb-2025 12:45:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 29
+[25-Feb-2025 12:45:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 30
+[25-Feb-2025 12:45:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 31
+[25-Feb-2025 12:45:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 32
+[25-Feb-2025 12:45:35 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 18
+[25-Feb-2025 12:45:35 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 25
+[25-Feb-2025 12:45:35 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 28
+[25-Feb-2025 12:45:35 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 29
+[25-Feb-2025 12:45:35 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 30
+[25-Feb-2025 12:45:35 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 31
+[25-Feb-2025 12:45:35 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 32
+[25-Feb-2025 12:47:46 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 18
+[25-Feb-2025 12:47:46 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 26
+[25-Feb-2025 12:47:46 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 29
+[25-Feb-2025 12:47:46 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 30
+[25-Feb-2025 12:47:46 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 31
+[25-Feb-2025 12:47:46 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 32
+[25-Feb-2025 12:47:46 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 33
+[25-Feb-2025 12:49:45 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 16
+[25-Feb-2025 12:49:45 UTC] PHP Warning:  Undefined variable $data in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 42
+[25-Feb-2025 12:51:31 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 16
+[25-Feb-2025 12:51:31 UTC] PHP Warning:  Undefined variable $data in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 42
+[25-Feb-2025 12:57:28 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 16
+[25-Feb-2025 12:57:28 UTC] PHP Warning:  Undefined variable $data in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 42
+[25-Feb-2025 12:59:14 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 16
+[25-Feb-2025 12:59:14 UTC] PHP Warning:  Undefined variable $data in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 42
+[25-Feb-2025 13:07:54 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 16
+[25-Feb-2025 13:07:54 UTC] PHP Warning:  Undefined variable $data in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 42
+[25-Feb-2025 13:11:59 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 16
+[25-Feb-2025 13:11:59 UTC] PHP Warning:  Undefined variable $data in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 42
+[25-Feb-2025 13:16:44 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 16
+[25-Feb-2025 13:16:44 UTC] PHP Warning:  Undefined variable $data in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 42
+[25-Feb-2025 13:17:33 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 16
+[25-Feb-2025 13:17:33 UTC] PHP Warning:  Undefined variable $data in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 43
+[27-Feb-2025 02:06:45 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 16
+[27-Feb-2025 02:12:01 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 16
+[27-Feb-2025 02:12:01 UTC] PHP Warning:  Array to string conversion in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 37
+[27-Feb-2025 02:15:41 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 16
+[27-Feb-2025 02:15:41 UTC] PHP Warning:  Undefined array key "name" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 36
+[27-Feb-2025 02:17:50 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 16
+[27-Feb-2025 02:17:50 UTC] PHP Warning:  Undefined array key "data" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 18
+[27-Feb-2025 02:17:50 UTC] PHP Warning:  Undefined array key "name" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 38
+[27-Feb-2025 03:11:56 UTC] JSON Data: {"name":"Gitar","brand_id":"ca3e0ea9-e2bc-4add-ac33-f7b10e4fd136","price":6500000,"purchase_date":"2020-10-10T00:00:00Z","type_id":"1fdecfcc-d772-4309-829a-17e145972a54","status":"available","image_filename":"string"}
+[27-Feb-2025 03:11:56 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "console" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 31
+[27-Feb-2025 03:13:26 UTC] JSON Data: {"name":"Gitar","brand_id":"ca3e0ea9-e2bc-4add-ac33-f7b10e4fd136","price":6500000,"purchase_date":"2020-10-10T00:00:00Z","type_id":"1fdecfcc-d772-4309-829a-17e145972a54","status":"available","image_filename":"string"}
+[27-Feb-2025 03:13:26 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "console" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 31
+[27-Feb-2025 03:16:41 UTC] JSON Data: {"name":"Gitar","brand_id":"ca3e0ea9-e2bc-4add-ac33-f7b10e4fd136","price":6500000,"purchase_date":"2020-10-10T00:00:00Z","type_id":"1fdecfcc-d772-4309-829a-17e145972a54","status":"available","image_filename":"string"}
+[27-Feb-2025 03:16:41 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "console" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 31
+[27-Feb-2025 03:17:19 UTC] JSON Data: {"name":"Gitar","brand_id":"ca3e0ea9-e2bc-4add-ac33-f7b10e4fd136","price":12000000,"purchase_date":"2020-10-10T00:00:00Z","type_id":"1fdecfcc-d772-4309-829a-17e145972a54"}
+[27-Feb-2025 03:17:19 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "console" in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/gbibaro1/public_html/inventory/pages/controller/addInventoriesRequest.php on line 31
+[27-Feb-2025 03:19:12 UTC] JSON Input: {"name":"Gitar","brand_id":"ca3e0ea9-e2bc-4add-ac33-f7b10e4fd136","price":6500000,"purchase_date":"2020-10-10T00:00:00Z","type_id":"1fdecfcc-d772-4309-829a-17e145972a54","status":"available","image_filename":"string"}
+[27-Feb-2025 03:19:19 UTC] JSON Input: {"name":"Gitar","brand_id":"","price":0,"purchase_date":"T00:00:00Z","type_id":"","status":"available","image_filename":"string"}
+[27-Feb-2025 03:19:32 UTC] JSON Input: {"name":"Gitar","brand_id":"ca3e0ea9-e2bc-4add-ac33-f7b10e4fd136","price":120000,"purchase_date":"2020-10-10T00:00:00Z","type_id":"1fdecfcc-d772-4309-829a-17e145972a54","status":"available","image_filename":"string"}
+[27-Feb-2025 03:19:36 UTC] JSON Input: {"name":"Gitar","brand_id":"ca3e0ea9-e2bc-4add-ac33-f7b10e4fd136","price":120000,"purchase_date":"2020-10-10T00:00:00Z","type_id":"1fdecfcc-d772-4309-829a-17e145972a54","status":"available","image_filename":"string"}

@@ -26,25 +26,25 @@ include '../controller/getTypesRequest.php';
         include '../global/sidenav.php';
         ?>
         <!-- Header -->
-        <div class="relative bg-blueGray-spc md:pt-32 pb-32 pt-12">
-          <div class="px-4 md:px-10 mx-auto w-full">
-            <div>
+        <div class="relative bg-blueGray-spc md:pt-32 pb-32 pt-3">
+          <!--<div class="px-4 md:px-10 mx-auto w-full">-->
+            <!--<div>-->
                 <?php
-                include '../global/cardstat.php';
+                // include '../global/cardstat.php';
                 ?>
-            </div>
-          </div>
+            <!--</div>-->
+          <!--</div>-->
         </div>
         <div class="px-4 md:px-10 mx-auto w-full -m-24 bg-blueGray-spc">
           <div class="flex flex-wrap">
-            <div class="w-full xl:w-12/12 mb-12 xl:mb-0 px-4">
-              <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-sm rounded-lg border bg-blueGray-100 ">
+            <div class="w-full xl:w-12/12 mb-0 xl:mb-0 px-4">
+              <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-sm rounded-lg border bg-blueGray-100">
                 <div class="rounded-t mb-0 px-4 py-3 border-0 bg-white">
                   <div class="flex flex-wrap items-center">
                     <div class="relative w-full px-4 max-w-full flex-grow flex-1">
                       <h3 class="font-semibold text-base text-blueGray-700">
                         Settings
-                      </h6>
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -88,9 +88,9 @@ include '../controller/getTypesRequest.php';
                           <table class="items-center w-full bg-white border-collapse">
                             <thead>
                               <tr>
-                                <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                  Id Merek
-                                </th>
+                                <!--<th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">-->
+                                <!--  Id Merek-->
+                                <!--</th>-->
                                 <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
                                   Nama Merek
                                 </th>
@@ -106,7 +106,7 @@ include '../controller/getTypesRequest.php';
                                 foreach($dataMerek as $merek) {
                                   echo "<tr>";
                                   //Id Merek
-                                  echo "<th class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left'>" . htmlspecialchars($merek['id']) . "</th>";
+                                  //echo "<th class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left'>" . htmlspecialchars($merek['id']) . "</th>";
                                   //Nama Merek
                                   echo "<td class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4'>" . htmlspecialchars($merek['name']) . "</td>";
                                   //Options
@@ -165,9 +165,9 @@ include '../controller/getTypesRequest.php';
                           <table class="items-center w-full bg-white border-collapse">
                             <thead>
                               <tr>
-                                <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                  Id Tipe
-                                </th>
+                                <!--<th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">-->
+                                <!--  Id Tipe-->
+                                <!--</th>-->
                                 <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
                                   Nama Tipe
                                 </th>
@@ -183,7 +183,7 @@ include '../controller/getTypesRequest.php';
                                 foreach($dataTipe as $tipe) {
                                   echo "<tr>";
                                   //Id Tipe
-                                  echo "<th class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left'>" . htmlspecialchars($tipe['id']) . "</th>";
+                                  //echo "<th class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left'>" . htmlspecialchars($tipe['id']) . "</th>";
                                   //Nama Tipe
                                   echo "<td class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4'>" . htmlspecialchars($tipe['name']) . "</td>";
                                   //Options

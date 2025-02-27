@@ -2,33 +2,8 @@
 include '../global/session.php';
 $currentPage = "Dashboard";
 
-// URL Endpoint API
-$url = 'http://54.254.130.73:8000/inventories';
-
-// Inisialisasi cURL
-$ch = curl_init($url);
-
-// Set opsi cURL
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_HTTPHEADER, [
-    'Content-Type: application/json'
-]);
-
-// Eksekusi dan ambil hasilnya
-$response = curl_exec($ch);
-
-// Cek apakah ada error
-if(curl_errno($ch)){
-    echo 'Error:' . curl_error($ch);
-}
-
-// Tutup koneksi cURL
-curl_close($ch);
-
-// Decode JSON menjadi array PHP
-$dataBarang = json_decode($response, true);
-
-echo "<script>console.log('Test Response Inventories: " . $response . "');</script>";
+//call api
+include '../controller/getInventoriesRequest.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -115,7 +90,7 @@ echo "<script>console.log('Test Response Inventories: " . $response . "');</scri
             <!--</div>-->
           <!--</div>-->
           <div class="flex flex-wrap">
-            <div class="w-full xl:w-12/12 mb-12 xl:mb-0 px-4">
+            <div class="w-full xl:w-12/12 mb-0 xl:mb-0 px-4">
               <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-sm rounded-lg border bg-white ">
                 <div class="rounded-t mb-0 px-4 py-3 border-0">
                   <div class="flex flex-wrap items-center">
@@ -131,9 +106,6 @@ echo "<script>console.log('Test Response Inventories: " . $response . "');</scri
                   <table class="items-center w-full bg-transparent border-collapse">
                     <thead>
                       <tr>
-                        <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                          Id Barang
-                        </th>
                         <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
                           Nama Barang
                         </th>
@@ -155,7 +127,7 @@ echo "<script>console.log('Test Response Inventories: " . $response . "');</scri
                         foreach($dataBarang as $barang) {
                             echo '<tr>';
                             //Id Barang
-                            echo "<th class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left'>" . htmlspecialchars($barang['id']) . "</th>";
+                            // echo "<th class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left'>" . htmlspecialchars($barang['id']) . "</th>";
                             //Nama Barang
                             echo "<td class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4'>" . htmlspecialchars($barang['name']) . "</td>";
                             //Merek Barang
