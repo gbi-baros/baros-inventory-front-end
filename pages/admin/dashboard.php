@@ -25,14 +25,14 @@ include '../controller/getInventoriesRequest.php';
         include '../global/sidenav.php';
         ?>
         <!-- Header -->
-        <div class="relative bg-blueGray-spc md:pt-32 pb-32 pt-12">
-          <div class="px-4 md:px-10 mx-auto w-full">
-            <div>
+        <div class="relative bg-blueGray-spc md:pt-32 pb-32 pt-3">
+          <!--<div class="px-4 md:px-10 mx-auto w-full">-->
+            <!--<div>-->
                 <?php
-                include '../global/cardstat.php';
+                // include '../global/cardstat.php';
                 ?>
-            </div>
-          </div>
+            <!--</div>-->
+          <!--</div>-->
         </div>
         <div class="px-4 md:px-10 mx-auto w-full -m-24 bg-blueGray-spc">
           <!--<div class="flex flex-wrap">-->
@@ -115,8 +115,8 @@ include '../controller/getInventoriesRequest.php';
                         <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
                           Tipe Barang
                         </th>
-                        <th class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">
-                        </th>
+                        <!--<th class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-blueGray-50 text-blueGray-500 border-blueGray-100">-->
+                        <!--</th>-->
                       </tr>
                     </thead>
                     <tbody>
@@ -125,26 +125,29 @@ include '../controller/getInventoriesRequest.php';
                     if(is_array($dataBarang)) {
                         // Looping data merek dengan foreach
                         foreach($dataBarang as $barang) {
+                            include '../controller/getBrandRequestById.php';
+                            include '../controller/getTypesRequestById.php';
+                            
                             echo '<tr>';
                             //Id Barang
                             // echo "<th class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left'>" . htmlspecialchars($barang['id']) . "</th>";
                             //Nama Barang
                             echo "<td class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4'>" . htmlspecialchars($barang['name']) . "</td>";
                             //Merek Barang
-                            echo "<td class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4'>" . htmlspecialchars($barang['brand_id']) . "</td>";
+                            echo "<td class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4'>" . htmlspecialchars($dataMerekById['name']) . "</td>";
                             //Tipe Barang
-                            echo "<td class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4'>" . htmlspecialchars($barang['type']) . "</td>";
-                            echo "<td class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right'>";
-                            echo '<a href="#pablo" class="text-blueGray-500 block py-1 px-3" onclick="openDropdown(event,\'table-light-2-dropdown\')"><i class="fas fa-ellipsis-v"></i></a>';
-                            echo '<div class="hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48" id="table-light-2-dropdown">';
-                            echo '<a href="#pablo" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Add Log</a>';
-                            echo '<a href="#pablo" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Edit</a>';
-                            echo '<div class="h-0 my-2 border border-solid border-blueGray-100">';
-                            echo '</div>';
-                            echo '<a href="#pablo" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Delete</a>';
-                            echo '</div>';
-                            echo '</td>';
-                            echo '</tr>';
+                            echo "<td class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4'>" . htmlspecialchars($dataTipeById['name']) . "</td>";
+                            // echo "<td class='border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right'>";
+                            // echo '<a href="#pablo" class="text-blueGray-500 block py-1 px-3" onclick="openDropdown(event,\'table-light-2-dropdown\')"><i class="fas fa-ellipsis-v"></i></a>';
+                            // echo '<div class="hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48" id="table-light-2-dropdown">';
+                            // echo '<a href="#pablo" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Add Log</a>';
+                            // echo '<a href="#pablo" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Edit</a>';
+                            // echo '<div class="h-0 my-2 border border-solid border-blueGray-100">';
+                            // echo '</div>';
+                            // echo '<a href="#pablo" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Delete</a>';
+                            // echo '</div>';
+                            // echo '</td>';
+                            // echo '</tr>';
                         }
                     } else {
                         echo "<script>console.log('Warning: Data BARANG tidak ditemukan!');</script>";
