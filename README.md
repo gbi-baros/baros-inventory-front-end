@@ -1,4 +1,4 @@
-# Project Title
+# GBI Baros Inventory System
 Deskripsi singkat tentang proyek Anda.
 
 ## Features
